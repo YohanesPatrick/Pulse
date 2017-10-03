@@ -417,11 +417,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.44205909967422485" green="0.44621157646179199" blue="0.65758073329925537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="OqO-j5-ZfM" secondAttribute="trailing" id="HDG-cJ-juM"/>
                             <constraint firstItem="MHE-q2-CwR" firstAttribute="leading" secondItem="gs1-y3-zi2" secondAttribute="leading" constant="40" id="VI1-s3-QSl"/>
                             <constraint firstAttribute="trailing" secondItem="MHE-q2-CwR" secondAttribute="trailing" constant="40" id="ZgE-cD-Ebh"/>
                             <constraint firstItem="MHE-q2-CwR" firstAttribute="top" secondItem="OqO-j5-ZfM" secondAttribute="bottom" constant="35" id="gHb-dc-VFp"/>
-                            <constraint firstItem="OqO-j5-ZfM" firstAttribute="leading" secondItem="gs1-y3-zi2" secondAttribute="leading" id="wNb-Di-3t1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -571,6 +569,6 @@
         <image name="setting" width="45" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nSj-au-zGw"/>
+        <segue reference="hrs-8j-5BS"/>
     </inferredMetricsTieBreakers>
 </document>
