@@ -34,6 +34,9 @@
 		718DB9E81F71BB52009BAC73 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DB9E71F71BB52009BAC73 /* settingViewController.swift */; };
 		718DB9EA1F71BB6E009BAC73 /* profileViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DB9E91F71BB6E009BAC73 /* profileViewControler.swift */; };
 		718DB9ED1F71BB95009BAC73 /* questionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DB9EC1F71BB95009BAC73 /* questionViewController.swift */; };
+		9DC76E761F833C8200AB9FED /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC76E731F833C5C00AB9FED /* Charts.framework */; };
+		9DC76E771F833C8200AB9FED /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC76E731F833C5C00AB9FED /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DC76E7C1F8343EC00AB9FED /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC76E7B1F8343EC00AB9FED /* ChartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,42 @@
 			remoteGlobalIDString = 712BAE421F6C42CE00EDAB5A;
 			remoteInfo = Pulse2;
 		};
+		9DC76E721F833C5C00AB9FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC76E6D1F833C5C00AB9FED /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		9DC76E741F833C5C00AB9FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC76E6D1F833C5C00AB9FED /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		9DC76E781F833C8200AB9FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC76E6D1F833C5C00AB9FED /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9DC76E7A1F833C8200AB9FED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9DC76E771F833C8200AB9FED /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		712BAE431F6C42CE00EDAB5A /* Pulse2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +125,8 @@
 		718DB9E71F71BB52009BAC73 /* settingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		718DB9E91F71BB6E009BAC73 /* profileViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewControler.swift; sourceTree = "<group>"; };
 		718DB9EC1F71BB95009BAC73 /* questionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questionViewController.swift; sourceTree = "<group>"; };
+		9DC76E6D1F833C5C00AB9FED /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		9DC76E7B1F8343EC00AB9FED /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC76E761F833C8200AB9FED /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +162,7 @@
 				712BAE651F6C42CE00EDAB5A /* Pulse2Tests */,
 				712BAE701F6C42CE00EDAB5A /* Pulse2UITests */,
 				712BAE441F6C42CE00EDAB5A /* Products */,
+				9DC76E6D1F833C5C00AB9FED /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +216,7 @@
 				718DB9E71F71BB52009BAC73 /* settingViewController.swift */,
 				718DB9E91F71BB6E009BAC73 /* profileViewControler.swift */,
 				718DB9EC1F71BB95009BAC73 /* questionViewController.swift */,
+				9DC76E7B1F8343EC00AB9FED /* ChartController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -225,6 +268,15 @@
 			name = DesignableX;
 			sourceTree = "<group>";
 		};
+		9DC76E6E1F833C5C00AB9FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DC76E731F833C5C00AB9FED /* Charts.framework */,
+				9DC76E751F833C5C00AB9FED /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,10 +287,12 @@
 				712BAE3F1F6C42CE00EDAB5A /* Sources */,
 				712BAE401F6C42CE00EDAB5A /* Frameworks */,
 				712BAE411F6C42CE00EDAB5A /* Resources */,
+				9DC76E7A1F833C8200AB9FED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9DC76E791F833C8200AB9FED /* PBXTargetDependency */,
 			);
 			name = Pulse2;
 			productName = Pulse2;
@@ -319,6 +373,12 @@
 			mainGroup = 712BAE3A1F6C42CE00EDAB5A;
 			productRefGroup = 712BAE441F6C42CE00EDAB5A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9DC76E6E1F833C5C00AB9FED /* Products */;
+					ProjectRef = 9DC76E6D1F833C5C00AB9FED /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				712BAE421F6C42CE00EDAB5A /* Pulse2 */,
@@ -327,6 +387,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9DC76E731F833C5C00AB9FED /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 9DC76E721F833C5C00AB9FED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9DC76E751F833C5C00AB9FED /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 9DC76E741F833C5C00AB9FED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		712BAE411F6C42CE00EDAB5A /* Resources */ = {
@@ -374,6 +451,7 @@
 				718DB9E41F70B2D0009BAC73 /* ProfileModel.swift in Sources */,
 				718DB9EA1F71BB6E009BAC73 /* profileViewControler.swift in Sources */,
 				712BAEAC1F6C489C00EDAB5A /* UIViewXRadialGradient.swift in Sources */,
+				9DC76E7C1F8343EC00AB9FED /* ChartController.swift in Sources */,
 				712BAEAA1F6C489C00EDAB5A /* UIViewControllerX.swift in Sources */,
 				712BAEA41F6C489C00EDAB5A /* UIButtonX.swift in Sources */,
 				718DB9ED1F71BB95009BAC73 /* questionViewController.swift in Sources */,
@@ -413,6 +491,11 @@
 			isa = PBXTargetDependency;
 			target = 712BAE421F6C42CE00EDAB5A /* Pulse2 */;
 			targetProxy = 712BAE6E1F6C42CE00EDAB5A /* PBXContainerItemProxy */;
+		};
+		9DC76E791F833C8200AB9FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 9DC76E781F833C8200AB9FED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -538,6 +621,7 @@
 		712BAE771F6C42CE00EDAB5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KHNDLNKS7X;
 				INFOPLIST_FILE = Pulse2/Info.plist;
@@ -552,6 +636,7 @@
 		712BAE781F6C42CE00EDAB5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KHNDLNKS7X;
 				INFOPLIST_FILE = Pulse2/Info.plist;

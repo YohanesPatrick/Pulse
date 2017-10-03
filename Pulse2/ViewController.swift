@@ -1,5 +1,6 @@
 
 import UIKit
+import Charts
 
 class ViewController: UIViewController {
     
@@ -15,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-    
+
     
     var tableData: [Model] = []
     var identities = ["BGView","HBView","WView","BlankView","BlankView"]
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "SettingViewSegue", sender: self)
     }
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         }
         closeMenu()
         setupAnimatedControls()
+        
     }
     
     
@@ -146,4 +148,5 @@ extension ViewController: UITableViewDelegate{
         
     }
 }
+
 
