@@ -401,13 +401,28 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="8Tb-P7-L6i"/>
                                 </connections>
                             </button>
-                            <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-j5-ZfM" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="88" width="343" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-j5-ZfM" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="88" width="375" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MHE-q2-CwR">
+                                <rect key="frame" x="40" y="474" width="295" height="29"/>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="Week"/>
+                                    <segment title="Month"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.44205909967422485" green="0.44621157646179199" blue="0.65758073329925537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OqO-j5-ZfM" secondAttribute="trailing" id="HDG-cJ-juM"/>
+                            <constraint firstItem="MHE-q2-CwR" firstAttribute="leading" secondItem="gs1-y3-zi2" secondAttribute="leading" constant="40" id="VI1-s3-QSl"/>
+                            <constraint firstAttribute="trailing" secondItem="MHE-q2-CwR" secondAttribute="trailing" constant="40" id="ZgE-cD-Ebh"/>
+                            <constraint firstItem="MHE-q2-CwR" firstAttribute="top" secondItem="OqO-j5-ZfM" secondAttribute="bottom" constant="35" id="gHb-dc-VFp"/>
+                            <constraint firstItem="OqO-j5-ZfM" firstAttribute="leading" secondItem="gs1-y3-zi2" secondAttribute="leading" id="wNb-Di-3t1"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lineChartView" destination="OqO-j5-ZfM" id="cKY-O6-Hxw"/>
@@ -442,13 +457,16 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="hrs-8j-5BS"/>
                                 </connections>
                             </button>
-                            <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlu-Np-Ulw" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="88" width="343" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlu-Np-Ulw" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="88" width="375" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.44205909967422485" green="0.44621157646179199" blue="0.65758073329925537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tlu-Np-Ulw" secondAttribute="trailing" id="ech-ih-0Y2"/>
+                            <constraint firstItem="tlu-Np-Ulw" firstAttribute="leading" secondItem="Fgm-wM-YsX" secondAttribute="leading" id="osI-9u-IlY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lineChartView" destination="tlu-Np-Ulw" id="7oc-ec-jOR"/>
@@ -483,13 +501,16 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="nSj-au-zGw"/>
                                 </connections>
                             </button>
-                            <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-wl-3b9" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="88" width="343" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-wl-3b9" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="88" width="375" height="350"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.44205909967422485" green="0.44621157646179199" blue="0.65758073329925537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HPG-wl-3b9" firstAttribute="leading" secondItem="x1J-T2-whI" secondAttribute="leading" id="7mG-DW-VWs"/>
+                            <constraint firstAttribute="trailing" secondItem="HPG-wl-3b9" secondAttribute="trailing" id="7rS-9C-6V6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="barChartView" destination="HPG-wl-3b9" id="6K8-du-r3K"/>
