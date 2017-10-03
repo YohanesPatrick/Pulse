@@ -26,23 +26,38 @@ class ChartController: UIViewController {
     }
     func setChart(dataPoints: [String], values: [Double]) {
         
-        var dataEntries = [ChartDataEntry]()
+        var lineDataEntries = [ChartDataEntry]()
+        var barDataEntries = [BarChartDataEntry]()
         
         for i in 0..<dataPoints.count {
-            let dataEntry = ChartDataEntry(x: Double(i), y: values[i])
-            dataEntries.append(dataEntry)
+            let lineDataEntry = ChartDataEntry(x: Double(i), y: values[i])
+            lineDataEntries.append(lineDataEntry)
+            let barDataEntry = BarChartDataEntry(x: Double(i), y: values[i])
+            barDataEntries.append(barDataEntry)
+            
         }
         
-        let plot = LineChartDataSet(values: dataEntries, label: "Unit")
-        plot.colors = [NSUIColor.white]
+        let plotLine = LineChartDataSet(values: lineDataEntries, label: "Unit")
+        plotLine.colors = [NSUIColor.white]
         
         
         let lineChartData = LineChartData()
-        lineChartData.addDataSet(plot)
+        lineChartData.addDataSet(plotLine)
         
-        lineChartView.chartDescription?.enabled = false
-        lineChartView.data = lineChartData
+        if lineChartView != nil{
+            lineChartView.chartDescription?.enabled = false
+            lineChartView.data = lineChartData
+        }
         
+        let plotBar = BarChartDataSet(values: barDataEntries, label: "Units Sold")
+        
+        let barChartData = BarChartData()
+        barChartData.addDataSet(plotBar)
+        
+        if barChartView != nil {
+            barChartView.chartDescription?.enabled = false
+            barChartView.data = barChartData
+        }
     }
 }
 

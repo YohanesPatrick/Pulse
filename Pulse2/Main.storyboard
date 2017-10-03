@@ -483,7 +483,7 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="nSj-au-zGw"/>
                                 </connections>
                             </button>
-                            <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-wl-3b9" customClass="LineChartView" customModule="Charts">
+                            <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-wl-3b9" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="16" y="88" width="343" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -492,7 +492,7 @@
                         <color key="backgroundColor" red="0.44205909967422485" green="0.44621157646179199" blue="0.65758073329925537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="lineChartView" destination="HPG-wl-3b9" id="cZl-36-8ZN"/>
+                        <outlet property="barChartView" destination="HPG-wl-3b9" id="6K8-du-r3K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5r-8g-vNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -550,6 +550,6 @@
         <image name="setting" width="45" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8Tb-P7-L6i"/>
+        <segue reference="nSj-au-zGw"/>
     </inferredMetricsTieBreakers>
 </document>
