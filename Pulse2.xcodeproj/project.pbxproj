@@ -293,6 +293,7 @@
 				TargetAttributes = {
 					712BAE421F6C42CE00EDAB5A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KHNDLNKS7X;
 						ProvisioningStyle = Automatic;
 					};
 					712BAE611F6C42CE00EDAB5A = {
@@ -538,7 +539,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KHNDLNKS7X;
 				INFOPLIST_FILE = Pulse2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = starfish.Pulse2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,7 +553,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KHNDLNKS7X;
 				INFOPLIST_FILE = Pulse2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = starfish.Pulse2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     
     var tableData: [Model] = []
+    var identities = ["BGView","HBView","WView","BlankView","BlankView"]
     var ProfileData: ProfileModel?
     var myIndex = 0
     
@@ -128,7 +129,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as! TableViewCell
         cell.setup(model: tableData[indexPath.row])
-        return cell
+        return cell 
     }
 
 }
@@ -137,7 +138,12 @@ extension ViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
-        performSegue(withIdentifier: "cellSegue", sender: self)
+        let vcName = identities[myIndex]
+        
+        let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+        
+        
     }
 }
 
