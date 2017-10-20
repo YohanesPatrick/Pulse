@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>667776615440-omua6rfpe8o72nav608mhh8ob3v4qmh5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.667776615440-omua6rfpe8o72nav608mhh8ob3v4qmh5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB6o-95QIatVtnbO3Gnga_Qp3Pgu0KePQc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>667776615440</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>starfish.Pulse2</string>
+	<key>PROJECT_ID</key>
+	<string>diabetes-6ba41</string>
+	<key>STORAGE_BUCKET</key>
+	<string>diabetes-6ba41.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:667776615440:ios:7ccdb93284a469f0</string>
+	<key>DATABASE_URL</key>
+	<string>https://diabetes-6ba41.firebaseio.com</string>
+</dict>
+</plist>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6080871F99222200348CD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D6080841F991AAF00348CD6 /* GoogleService-Info.plist */; };
 		3DBE2B931F8FE1F80098DD50 /* SurveyObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE2B911F8FE1F80098DD50 /* SurveyObj.swift */; };
 		3DBE2B941F8FE1F80098DD50 /* StepObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE2B921F8FE1F80098DD50 /* StepObj.swift */; };
 		626E608D12F844236BEB4C1D /* Pods_Pulse2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B53B0AEC022856773C53D0 /* Pods_Pulse2.framework */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		06D1722EB8D31AF131217225 /* Pods-Pulse2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pulse2Tests/Pods-Pulse2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D6080841F991AAF00348CD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3DBE2B911F8FE1F80098DD50 /* SurveyObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyObj.swift; sourceTree = "<group>"; };
 		3DBE2B921F8FE1F80098DD50 /* StepObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepObj.swift; sourceTree = "<group>"; };
 		62A3203A582C09FC56019A75 /* Pods-Pulse2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pulse2UITests/Pods-Pulse2UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				712BAE941F6C452400EDAB5A /* Resources */,
 				712BAE5D1F6C42CE00EDAB5A /* Info.plist */,
+				3D6080841F991AAF00348CD6 /* GoogleService-Info.plist */,
 				712BAE481F6C42CE00EDAB5A /* Model */,
 				712BAE501F6C42CE00EDAB5A /* View */,
 				712BAE551F6C42CE00EDAB5A /* Controller */,
@@ -413,6 +416,7 @@
 				712BAE591F6C42CE00EDAB5A /* Assets.xcassets in Resources */,
 				718DB9E61F70B8C3009BAC73 /* Ubuntu-Regular.ttf in Resources */,
 				712BAE521F6C42CE00EDAB5A /* Main.storyboard in Resources */,
+				3D6080871F99222200348CD6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
