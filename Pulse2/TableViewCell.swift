@@ -13,7 +13,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var data1Label: UILabel!
     @IBOutlet weak var data2Label: UILabel!
-
+    
     func setup(model: Model) {
         titleLabel.text = model.title
         data1Label.text = model.data1

@@ -11,9 +11,7 @@ import UIKit
 
 
 class profileViewController: UIViewController {
-    @IBAction func homeButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "HomeViewSeguep", sender: self)
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

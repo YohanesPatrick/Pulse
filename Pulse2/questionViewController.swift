@@ -12,10 +12,6 @@ import UIKit
 
 class questionViewController: UIViewController {
     
-    @IBAction func HomeButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "HomeViewSegueq", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

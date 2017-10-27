@@ -11,9 +11,7 @@ import UIKit
 
 
 class settingViewController: UIViewController {
-    @IBAction func homeButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "HomeViewSegues", sender: self)
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,5 +19,8 @@ class settingViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    @IBAction func returnHome(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true);
     }
 }

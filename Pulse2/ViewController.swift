@@ -2,6 +2,7 @@
 import UIKit
 import Charts
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -16,27 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-
+    
     
     var tableData: [Model] = []
     var identities = ["BGView","HBView","WView","BlankView","BlankView"]
     var ProfileData: ProfileModel?
     var myIndex = 0
     
-    @IBAction func questionViewButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "QuestionViewSegue", sender: self)
-    }
-    @IBAction func profileViewButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "ProfileViewSegue", sender: self)
-    }
-    @IBAction func settingViewButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "SettingViewSegue", sender: self)
-    }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         tableView.dataSource = self
         
@@ -64,7 +53,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
   
-        
         UIView.animate(withDuration: 0.3, delay: 0.3, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
             self.profilePicView.transform = .identity
             self.nameDateView.transform = .identity
@@ -73,7 +61,6 @@ class ViewController: UIViewController {
         }
     }
 
-    
     @IBAction func menuTapped(_ sender: FloatingActionButton) {
         UIView.animate(withDuration: 0.3, animations: {
             if self.menuView.transform == .identity {
@@ -131,20 +118,19 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as! TableViewCell
         cell.setup(model: tableData[indexPath.row])
+        
         return cell 
     }
 
 }
 
 extension ViewController: UITableViewDelegate{
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         let vcName = identities[myIndex]
         
         let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
         self.navigationController?.pushViewController(viewController!, animated: true)
-        
         
     }
 }

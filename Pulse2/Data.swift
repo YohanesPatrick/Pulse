@@ -25,7 +25,7 @@ class Data {
     
     static func getProfile(completion: @escaping (ProfileModel?) -> ()){
         DispatchQueue.global(qos: .userInteractive).async {
-            let data = ProfileModel(Name: "Yohanes Patrik H", day: "Monday", date: "January 21,9999" , ProfilePicture: #imageLiteral(resourceName: "profilePic"))
+            let data = ProfileModel(Name: "Yohanes Patrik H", day: "Monday", date: "January 21,9999" , ProfilePicture:#imageLiteral(resourceName: "Artboard 2"))
             
             DispatchQueue.main.async {
                 completion(data)
